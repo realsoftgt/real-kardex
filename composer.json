@@ -1,0 +1,55 @@
+{
+    "name": "realsoftgt/real-kardex",
+    "description": "Complemento para el procesamiento de stock, notifiaciones y kardes de productos de tipo bien, en modelos Eloquent usados en Laravel o FilamentPHP.",
+    "keywords": [
+        "RealKardex",
+        "laravel",
+        "kardex",
+        "stock",
+        "inventory",
+        "realsoft",
+        "real-kardex"
+    ],
+    "homepage": "https://github.com/realsoftgt/real-kardex",
+    "type": "library",
+    "require": {
+        "php": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^7.17",
+        "phpunit/phpunit": "^9.5"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "RealSoft\\RealKardex\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Henry L. Díaz Gutiérrez",
+            "email": "hdiaz@realsoft.dev",
+            "homepage": "https://realsoft.dev",
+            "role": "Developer"
+        },
+        {
+            "name": "Real Software Solutions",
+            "email": "contact@realsoft.dev",
+            "homepage": "https://realsoft.dev"
+        }
+    ],
+    "minimum-stability": "dev",
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RealSoft\\RealKardex\\KardexServiceProvider"
+            ],
+            "aliases": {
+                "Alias": "RealSoft\\RealKardex\\KardexFacade"
+            }
+        }
+    }
+}
